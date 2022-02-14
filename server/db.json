@@ -1,0 +1,23 @@
+{
+    "Tasks": [{
+            "id": 1,
+            "title": "Inspect Landing gear systems",
+            "description": "Engineers are expected to carry out thorough inspections on C130 landing gear systems",
+            "deadline": "22-02-2022"
+        },
+        {
+            "id": 2,
+            "title": "Inspect Landing rear door",
+            "description": "Engineers are expected to carry out thorough inspections on C130 landing gear systems",
+            "deadline": "24-02-2022"
+        },
+
+        {
+            "id": 3,
+            "title": "72 hours inspecton of DO-228",
+            "description": "Engineers are expected to carry out thorough inspections on C130 landing gear systems",
+            "deadline": "2-03-2022"
+        }
+
+    ]
+}
