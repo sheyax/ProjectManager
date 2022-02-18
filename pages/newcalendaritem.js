@@ -12,7 +12,7 @@ const [end, setEnd]= useState('');
     
         if(!start) return;
     
-        const res= await fetch('https://my-json-server.typicode.com/sheyax/FakeDatabase/Events', {
+        const res= await fetch('https://elenu1.herokuapp.com/Events', {
           method: 'POST',
           body: JSON.stringify({
             title,

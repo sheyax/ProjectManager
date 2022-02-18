@@ -10,7 +10,7 @@ export default function Projects() {
 
 
 useEffect(() => {
-  fetch('https://my-json-server.typicode.com/sheyax/FakeDatabase/Events')
+  fetch('https://elenu1.herokuapp.com/Events')
   .then(response => response.json())
   .then(data => setTask(data))
 }, [])

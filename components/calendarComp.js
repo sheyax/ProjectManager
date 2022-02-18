@@ -31,7 +31,7 @@ export default function CalendarComp() {
 
     //Fetch data for dates from the database
     useEffect(() => {
-        fetch('https://my-json-server.typicode.com/sheyax/FakeDatabase/Events')
+        fetch('https://elenu1.herokuapp.com/Events')
             .then(response => response.json())
             .then(data => setNewEventData(data))
     }, [])
@@ -47,7 +47,7 @@ export default function CalendarComp() {
 
         if (!start) return;
 
-        const res = await fetch('http://localhost:3003/events', {
+        const res = await fetch('https://elenu1.herokuapp.com/Events', {
             method: 'POST',
             body: JSON.stringify({
                 title,
