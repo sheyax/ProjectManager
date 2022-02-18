@@ -5,12 +5,12 @@ import tasks from '../server/db.json'
 
 export default function Projects() {
 
-    const defaultEndpoint= 'http://localhost:3002/tasks';
+    
     const [task, setTask]= useState(null)
 
 
 useEffect(() => {
-  fetch('http://localhost:3002/tasks')
+  fetch('https://my-json-server.typicode.com/sheyax/FakeDatabase/Events')
   .then(response => response.json())
   .then(data => setTask(data))
 }, [])
@@ -24,21 +24,21 @@ useEffect(() => {
 
                 <div className="flex justify-between md:grid-cols-3 
                 px-5 py-4 hover:bg-gray-200 cursor-pointer  my-4 ">
-                <div className='flex items-center space-x-5'>
-                    <p>{tasker.id}</p>
+                <div className='flex items-center space-x-5 w-[200px] md:min-w-[300px]'>
+                    <p className='truncate'>{tasker.id}</p>
                     <h1>{tasker.title}</h1>
 
                     
                 </div>
 
-                <div className=''>
+              {/*  <div className=''>
                     <p className="text-gray-900 truncate w-60
                     hidden md:inline-flex">{tasker.description}</p>
-                    </div>
+        </div>*/}
                 
 
-                    <div >
-                    <p className="text-red-400 font-bold"> {tasker.deadline}</p>
+                    <div className="">
+                    <p className="text-red-400 font-bold"> {tasker.end}</p>
                     </div>
 
                     

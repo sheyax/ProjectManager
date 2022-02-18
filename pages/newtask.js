@@ -14,7 +14,7 @@ const submit= async (e)=>{
 
     if( !description) return;
 
-    const res= await fetch('http://localhost:3002/tasks',{
+    const res= await fetch('http://localhost:3003/tasks',{
         method: 'POST',
         body: JSON.stringify({
             title,
