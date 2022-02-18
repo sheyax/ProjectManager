@@ -45,7 +45,7 @@ const [end, setEnd]= useState('');
           <p>Start Date:</p>
         <input type="date" name="Start Date" id="" 
         value={start}
-        className='w-60'
+        className='w-60 text-black'
         onChange={(e) => setStart(e.target.value)}/>
         </div>
         
@@ -54,7 +54,7 @@ const [end, setEnd]= useState('');
           <p>End Date: </p>
         <input type="date" name="Start Date" id="" 
 
-className='w-60'
+className='w-60 text-black'
         value={end}
         onChange={(e) => setEnd(e.target.value)}/>
         </div>
