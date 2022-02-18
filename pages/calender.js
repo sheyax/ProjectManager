@@ -10,7 +10,7 @@ import 'react-datepicker/dist/react-datepicker.css'
 import DatePicker from 'react-datepicker'; 
 import moment from 'moment';
 import Link from 'next/link';
-import { HomeIcon } from '@heroicons/react/outline';
+import { HomeIcon, PlusCircleIcon } from '@heroicons/react/outline';
 
 
 const locales = {
@@ -117,9 +117,16 @@ const [end, setEnd]= useState('');
   return (
     <div className='items-center justify center'>
 
+<div className='flex'>
+
 <Link href='/'passHref> 
                 <HomeIcon className="h-10 w-10 bg-blue-500 p-1 text-white mt-5 mb-5 m-auto  rounded-full md:h-8 md:w-8 "/> 
                 </Link>
+
+                <Link href='/newcalendaritem'passHerf> 
+                <PlusCircleIcon className="h-10 w-10 bg-blue-500 p-1 text-white  rounded-full m-auto md:h-8 md:w-8 "/> 
+                </Link>
+                </div>
 
       <h2 className='p-5 font-bold text-lg hidden md:inline'>Add new event</h2>
       <div className=' md:flex md:justify-between items-center hidden space-y-5'>
