@@ -117,7 +117,7 @@ const [end, setEnd]= useState('');
   return (
     <div className='items-center justify center'>
 
-<Link href='/'> 
+<Link href='/'passHref> 
                 <HomeIcon className="h-10 w-10 bg-blue-500 p-1 text-white mt-5 mb-5 m-auto  rounded-full md:h-8 md:w-8 "/> 
                 </Link>
 
